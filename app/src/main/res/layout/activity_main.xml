@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/supermarket_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:padding="12dp"
+            android:background="#F3F4F6"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_bill"/>
+
+            <customfonts.MyTextView_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/txt_color"
+                android:text="All Vouchers"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+               android:layout_marginRight="7dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/total_price"
+                android:textColor="#515151"
+                android:gravity="right"
+                android:text="Total: 5200,00 RSD"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_star_2"
+                android:layout_marginLeft="30dp"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:text="Welcome Offer"/>
+
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#6d6d6d"
+               android:layout_marginRight="20dp"
+                android:text="300,00 RSD"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_commerce"
+                android:layout_marginLeft="30dp"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:text="Loyalty Card"/>
+
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#6d6d6d"
+                android:layout_marginRight="20dp"
+                android:text="1,000,00 RSD"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bills"
+                android:layout_marginLeft="30dp"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:text="Regular Voucher"
+                android:id="@+id/myTextView_Bold" />
+
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#6d6d6d"
+                android:layout_marginRight="20dp"
+                android:text="25,000 RSD"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_paid"
+                android:layout_marginLeft="30dp"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:text="Still to be paid"/>
+
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/txt_color"
+                android:text="323,27 RSD"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#F3F4F6"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_bill"/>
+
+            <customfonts.MyTextView_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/txt_color"
+                android:text="Dodaj PIN code"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/ic_round"/>
+
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/ic_round"/>
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/ic_round"/>
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/ic_round"/>
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/ic_rounds"/>
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/ic_rounds"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#F3F4F6"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textColor="@color/txt_color"
+                android:layout_marginTop="15dp"
+                android:gravity="center"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textSize="13dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_locked"/>
+
+        <customfonts.MyTextView_Bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:textColor="@color/txt_color"
+            android:layout_gravity="center_horizontal"
+            android:text="Forgot your Passowrd ?"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/txt_color"
+                android:text="Please call"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#59c861"
+                android:textSize="13dp"
+                android:text=" 011 2382 925"/>
+
+            <customfonts.MyTextView_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/txt_color"
+                android:text=" to get your new PIN"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
